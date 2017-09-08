@@ -1,0 +1,151 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+  font-family: 'Futura', 'Helvetica';
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  background-color: #00207E;
+  color: #00C0FF;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+  transition: all 0.3s ease;
+}
+
+.inputSection {
+  margin: 50px 0px 80px 0px;
+  width: 400px;
+  transition: all 0.3s ease;
+}
+
+.inputs {
+  width: inherit;
+}
+
+input {
+  width: inherit;
+  height: 30px;
+  outline: none;
+  background-color: inherit;
+  color: inherit;
+  font-size: 25px;
+  font-family: inherit;
+  font-weight: inherit;
+  border: none;
+  border-bottom: 1px solid #00C0FF;
+  border-radius: 0;
+  -webkit-appearance: none;
+  padding: 5px 0;
+  margin: 0 0 15px 0;
+  transition: all 0.3s ease;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #00C0FF;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #00C0FF;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #00C0FF;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #00C0FF;
+}
+
+.addOption {
+  height: 40px;
+  width: 40px;
+  background-color: #00C0FF;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  font-size: 25px;
+  transition:all 0.3s ease;
+}
+
+.addOption:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.addOption:focus,
+.addOption:active {
+  outline: none;
+}
+
+.line {
+  height: 2px;
+  width: 30px;
+  background-color: #00207E;
+  position: absolute;
+  top: 19px;
+  left: 5px;
+}
+
+.line.vertical {
+  -webkit-transform: rotateZ(-90deg);
+  -ms-transform: rotateZ(-90deg);
+  transform: rotateZ(-90deg);
+}
+
+.resultSection {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  transition: all 0.3s ease;
+}
+
+button {
+  width: 180px;
+  height: 60px;
+  font-size: 25px;
+  font-family: 'Futura', 'Helvetica';
+  font-weight: lighter;
+  background-color: #00C0FF;
+  color: #00207E;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  transition:all 0.3s ease;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.fade {
+  opacity: 0;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+@media (max-width: 550px) {
+  body {
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .inputSection {
+    width: 100%;
+  }
+}
