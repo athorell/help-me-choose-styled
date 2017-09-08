@@ -4,6 +4,7 @@ $(function() {
   $('.inputSection').addClass('in')
   $('.submit').addClass('in')
   $('.focus').focus()
+
   var options = []
   var add_option = function() {
     $('.focus').removeClass('focus')
@@ -13,6 +14,7 @@ $(function() {
       $('input.focus.fade').addClass('in')
     }, 100)
   }
+
   var start_over = function() {
     options = []
     $('h1').removeClass('in')
@@ -29,6 +31,7 @@ $(function() {
     $('.inputSection').addClass('in')
     $('.submit').addClass('in')
   }
+
   var submit = function() {
     $('.inputSection').hide()
     $('.resultSection').css('display', 'flex')
@@ -46,6 +49,7 @@ $(function() {
       $('.resultSection').addClass('in')
     }, 300)
   }
+
   $('.addOption').click(add_option)
   $('button').click(submit)
   $('body').keypress(function(e) {
